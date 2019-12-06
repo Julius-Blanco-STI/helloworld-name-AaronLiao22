@@ -1,23 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package main;
 
-/**
- *
- * @author Comlab
- */
+package main;
+import java.util.Scanner;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
-        String name = "Aaron Liao";
-        System.out.println("Hello World" + " " + name);
+        Scanner scnr = new Scanner (System.in);
+        
+        System.out.println("Hello World!");
+        System.out.println("What's your name?");
+        String name = scnr.nextLine();
+                
+        System.out.println("How Old are you?");
+        int age =  scnr.nextInt();
+                
+        System.out.println("What's your address?");
+        String adr = scnr.next();
+        
+        System.out.println("Hi" + " " + name + "!");
+        System.out.println("You are " + age + " years old");
+        System.out.println("You live at " + adr);
     }
     
 }
